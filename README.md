@@ -175,3 +175,52 @@ function search() {
 </script>
 
 </body>
+<body style="margin:0; font-family:Arial; background:#0b0f19; color:white;">
+
+<!-- TOP BAR -->
+<div style="display:flex; justify-content:space-between; align-items:center; padding:15px; background:#111827; position:sticky; top:0;">
+
+    <div style="font-weight:bold;">🔷 Deeblaq Hub</div>
+
+    <div style="width:40px; height:40px; background:#00c6ff; border-radius:8px;"></div>
+
+</div>
+
+<!-- SEARCH BAR AT TOP -->
+<div style="text-align:center; padding:20px; background:#0b0f19;">
+
+    <input id="searchBox"
+        placeholder="Search Deeblaq..."
+        style="width:70%; padding:12px; border-radius:10px; border:none; font-size:16px;">
+
+    <button onclick="search()"
+        style="padding:12px 20px; border:none; border-radius:10px; background:#00c6ff; color:white;">
+        Search
+    </button>
+
+</div>
+
+<!-- CONTENT -->
+<div style="padding:30px;">
+    <h2>Welcome to Deeblaq Hub</h2>
+    <p>Download games, apps and browse the web easily.</p>
+</div>
+
+<script>
+function search() {
+    let input = document.getElementById("searchBox").value;
+
+    if (input.startsWith("http")) {
+        window.location.href = input;
+    } else {
+        window.location.href = "https://www.google.com/search?q=" + input;
+    }
+}
+</script>
+<title>Deeblaq Hub - Download Games & Search Web</title>
+
+<meta name="description" content="Deeblaq Hub lets you search the web and download games, apps, and files easily.">
+
+<meta name="keywords" content="deeblaq, download games, browser, github pages, free games download">
+
+</body>
