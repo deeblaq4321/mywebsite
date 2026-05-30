@@ -53,3 +53,20 @@ This project is licensed under the MIT License.
 ## Author
 
 adeyi bl
+<h2>MyWebsite Browser</h2>
+
+<input type="text" id="search" placeholder="Search or enter URL..." style="width:80%; padding:10px; font-size:16px;">
+
+<button onclick="goSearch()">Go</button>
+
+<script>
+function goSearch() {
+    let input = document.getElementById("search").value;
+
+    if (input.startsWith("http")) {
+        window.location.href = input;
+    } else {
+        window.location.href = "https://www.google.com/search?q=" + input;
+    }
+}
+</script>
