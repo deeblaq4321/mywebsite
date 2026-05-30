@@ -105,3 +105,73 @@ function go() {
 </script>
 
 </body>
+<body style="margin:0; font-family:Arial; background:#0b0f19; color:white;">
+
+<!-- TOP BAR -->
+<div style="display:flex; justify-content:space-between; align-items:center; padding:15px 20px; background:#111827;">
+
+    <div style="font-size:20px; font-weight:bold;">
+        🔷 Deeblaq Browser Hub
+    </div>
+
+    <!-- Rectangle Profile -->
+    <div style="width:45px; height:45px; background:#00c6ff; border-radius:8px;"></div>
+
+</div>
+
+<!-- SEARCH SECTION -->
+<div style="text-align:center; padding:60px 20px;">
+
+    <h1>Welcome to Deeblaq Search</h1>
+
+    <input id="searchBox" 
+        placeholder="Search with Deeblaq..." 
+        style="width:70%; padding:15px; font-size:18px; border-radius:10px; border:none;">
+
+    <button onclick="search()" 
+        style="padding:15px 25px; margin-left:10px; border:none; border-radius:10px; background:#00c6ff; color:white;">
+        Search
+    </button>
+
+</div>
+
+<!-- DOWNLOAD SECTION -->
+<div style="padding:30px;">
+
+    <h2>🎮 Download Games & Files</h2>
+
+    <div style="display:flex; gap:20px; flex-wrap:wrap;">
+
+        <a href="game1.zip" download 
+           style="padding:15px; background:#1f2937; border-radius:10px; text-decoration:none; color:white;">
+           Download Game 1
+        </a>
+
+        <a href="game2.zip" download 
+           style="padding:15px; background:#1f2937; border-radius:10px; text-decoration:none; color:white;">
+           Download Game 2
+        </a>
+
+        <a href="app.apk" download 
+           style="padding:15px; background:#1f2937; border-radius:10px; text-decoration:none; color:white;">
+           Download App
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+function search() {
+    let input = document.getElementById("searchBox").value;
+
+    // Deeblaq search (not Google branding)
+    if (input.startsWith("http")) {
+        window.location.href = input;
+    } else {
+        window.location.href = "https://www.google.com/search?q=" + input;
+    }
+}
+</script>
+
+</body>
