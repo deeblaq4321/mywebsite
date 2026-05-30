@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Deeblaq Hub - Download Games & Search Web</title>
+    <title>Deeblaq Hub - Search & Downloads</title>
 
     <meta name="description" content="Deeblaq Hub is a fast platform to search the web and download games, apps, and files easily.">
-    <meta name="keywords" content="deeblaq, browser, download games, free games, github pages, search engine">
+    <meta name="keywords" content="deeblaq, download games, browser, search engine, github pages">
 
 </head>
 
@@ -25,27 +25,28 @@
 
 </div>
 
-<!-- SEARCH BAR -->
-<div style="text-align:center; padding:20px; background:#0b0f19;">
+<!-- SINGLE SEARCH BAR -->
+<div style="text-align:center; padding:50px 20px;">
 
-    <h2>Deeblaq Search</h2>
+    <h2>Search Deeblaq Hub</h2>
 
     <input id="searchBox"
         placeholder="Search or enter website..."
-        style="width:70%; padding:12px; border-radius:10px; border:none; font-size:16px;">
+        style="width:70%; padding:15px; border-radius:10px; border:none; font-size:16px; outline:none;">
+
+    <br><br>
 
     <button onclick="search()"
-        style="padding:12px 20px; border:none; border-radius:10px; background:#00c6ff; color:white;">
+        style="padding:12px 25px; border:none; border-radius:10px; background:#00c6ff; color:white; font-size:16px;">
         Search
     </button>
 
 </div>
 
-<!-- MAIN CONTENT -->
+<!-- DOWNLOAD SECTION -->
 <div style="padding:30px;">
 
     <h2>🎮 Download Games & Apps</h2>
-    <p>Get your favorite games and files below:</p>
 
     <div style="display:flex; gap:15px; flex-wrap:wrap; margin-top:20px;">
 
