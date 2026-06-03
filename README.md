@@ -84,3 +84,40 @@ function search() {
 
 </body>
 </html>
+<!-- Website Header -->
+<header>
+    <div class="logo">Deeblaq</div>
+    <div class="profile"></div>
+</header>
+
+<!-- Main Search Section -->
+<div class="container">
+    <h1>Search the Web</h1>
+
+    <!-- Search Form -->
+    <form action="https://www.google.com/search" method="GET">
+        <input type="text" name="q" class="search-box"
+        placeholder="Search anything...">
+
+        <button class="search-btn">Search</button>
+    </form>
+</div>
+
+<!-- Downloads Section -->
+<div class="downloads">
+    <h2>Downloads</h2>
+
+    <!-- Games Card -->
+    <div class="card">
+        <h3>Games</h3>
+        <p>Download your favorite games.</p>
+    </div>
+
+    <!-- Apps Card -->
+    <div class="card">
+        <h3>Apps</h3>
+        <p>Download useful applications.</p>
+    </div>
+</div>
+
+<!-- End of Website -->
