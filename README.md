@@ -63,61 +63,160 @@
         <a href="app.apk" download
            style="padding:15px; background:#1f2937; border-radius:10px; color:white; text-decoration:none;">
            Download App
-        </a>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deeblaq Search</title>
 
-    </div>
-
-</div>
-
-<!-- SCRIPT -->
-<script>
-function search() {
-    let input = document.getElementById("searchBox").value;
-
-    if (input.startsWith("http")) {
-        window.location.href = input;
-    } else {
-        window.location.href = "https://www.google.com/search?q=" + input;
-    }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
-</script>
 
-</body>
-</html>
-<!-- Website Header -->
+body{
+    background:#f8f9fa;
+    min-height:100vh;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#1a73e8;
+}
+
+.profile{
+    width:50px;
+    height:50px;
+    border-radius:12px;
+    background:#1a73e8;
+}
+
+.main{
+    text-align:center;
+    margin-top:120px;
+}
+
+.main h1{
+    font-size:60px;
+    color:#1a73e8;
+    margin-bottom:30px;
+}
+
+.search-form{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.search-box{
+    width:60%;
+    max-width:700px;
+    padding:18px;
+    border:1px solid #ddd;
+    border-radius:50px;
+    font-size:18px;
+}
+
+.search-btn{
+    padding:18px 30px;
+    border:none;
+    border-radius:50px;
+    background:#1a73e8;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.search-btn:hover{
+    background:#1557b0;
+}
+
+.features{
+    margin-top:80px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+footer{
+    text-align:center;
+    margin-top:60px;
+    padding:20px;
+    color:#666;
+}
+</style>
+</head>
+
+<body>
+
 <header>
     <div class="logo">Deeblaq</div>
     <div class="profile"></div>
 </header>
 
-<!-- Main Search Section -->
-<div class="container">
-    <h1>Search the Web</h1>
+<section class="main">
+    <h1>Deeblaq Search</h1>
 
-    <!-- Search Form -->
-    <form action="https://www.google.com/search" method="GET">
-        <input type="text" name="q" class="search-box"
-        placeholder="Search anything...">
+    <form class="search-form"
+          action="https://www.google.com/search"
+          method="GET">
+        <input type="text"
+               name="q"
+               class="search-box"
+               placeholder="Search the web...">
 
-        <button class="search-btn">Search</button>
+        <button type="submit"
+                class="search-btn">
+                Search
+        </button>
     </form>
-</div>
+</section>
 
-<!-- Downloads Section -->
-<div class="downloads">
-    <h2>Downloads</h2>
+<section class="features">
 
-    <!-- Games Card -->
     <div class="card">
-        <h3>Games</h3>
-        <p>Download your favorite games.</p>
+        <h3>Web Search</h3>
+        <p>Search the internet quickly and easily.</p>
     </div>
 
-    <!-- Apps Card -->
     <div class="card">
-        <h3>Apps</h3>
-        <p>Download useful applications.</p>
+        <h3>Downloads</h3>
+        <p>Download games, apps, and useful files.</p>
     </div>
-</div>
 
-<!-- End of Website -->
+    <div class="card">
+        <h3>Fast Access</h3>
+        <p>Open your favorite websites in one click.</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Deeblaq Search. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+```
