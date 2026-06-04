@@ -79,7 +79,12 @@
     font-family:Arial, sans-serif;
 }
 
-body{
+body{<div style="font-weight:bold; font-size:18px;">
+    🔷 Deeblaq Hub
+</div>
+
+<!-- Rectangle Profile -->
+<div style="width:40px; height:40px; background:#00c6ff; border-radius:8px;"></div>
     background:#f8f9fa;
     min-height:100vh;
 }
